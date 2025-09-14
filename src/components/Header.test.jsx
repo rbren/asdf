@@ -13,7 +13,7 @@ describe('Header', () => {
   it('renders the logo', () => {
     render(<HeaderWithRouter />)
     
-    expect(screen.getByText('asdf')).toBeInTheDocument()
+    expect(screen.getByText('YOUR-APP-NAME')).toBeInTheDocument()
   })
 
   it('renders navigation links', () => {

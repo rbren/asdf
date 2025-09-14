@@ -18,7 +18,7 @@ describe('App', () => {
       })
       .mockResolvedValueOnce({
         ok: true,
-        json: async () => ({ status: 'healthy', service: 'asdf Backend' })
+        json: async () => ({ status: 'healthy', service: 'YOUR-APP-NAME Backend' })
       })
   })
 
@@ -26,14 +26,14 @@ describe('App', () => {
     render(<App />)
     
     // Check for header logo specifically
-    expect(screen.getByRole('link', { name: 'asdf' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'YOUR-APP-NAME' })).toBeInTheDocument()
     
     // Check for home page content (default route) - updated text
-    expect(screen.getByText('Welcome to asdf')).toBeInTheDocument()
+    expect(screen.getByText('Welcome to YOUR-APP-NAME')).toBeInTheDocument()
     expect(screen.getByText('Your React App is Running with Python Backend!')).toBeInTheDocument()
     
     // Check for footer
-    expect(screen.getByText('© 2025 asdf. All rights reserved.')).toBeInTheDocument()
+    expect(screen.getByText('© 2025 YOUR-APP-NAME. All rights reserved.')).toBeInTheDocument()
   })
 
   it('has proper navigation structure', () => {

@@ -18,14 +18,14 @@ describe('Home', () => {
       })
       .mockResolvedValueOnce({
         ok: true,
-        json: async () => ({ status: 'healthy', service: 'asdf Backend' })
+        json: async () => ({ status: 'healthy', service: 'YOUR-APP-NAME Backend' })
       })
   })
 
   it('renders the hero section', async () => {
     render(<Home />)
     
-    expect(screen.getByText('Welcome to asdf')).toBeInTheDocument()
+    expect(screen.getByText('Welcome to YOUR-APP-NAME')).toBeInTheDocument()
     expect(screen.getByText('Your React App is Running with Python Backend!')).toBeInTheDocument()
     
     // Wait for backend connection test to complete

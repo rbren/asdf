@@ -1,8 +1,8 @@
-# asdf Repository
+# YOUR-APP-NAME Repository
 
 ## Overview
 
-asdf is a modern React application built with Vite and deployed on Fly.io using Nginx. The project demonstrates best practices for React development with a clean, component-based architecture optimized for cloud deployment.
+YOUR-APP-NAME is a modern React application built with Vite and deployed on Fly.io using Nginx. The project demonstrates best practices for React development with a clean, component-based architecture optimized for cloud deployment.
 
 ## Key Features
 

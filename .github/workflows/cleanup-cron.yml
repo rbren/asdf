@@ -70,7 +70,7 @@ jobs:
           apps_to_delete=()
           deletion_results=()
           
-          # Get list of all apps and filter for asdf-* pattern (excluding main app)
+          # Get list of all apps and filter for YOUR-APP-NAME-* pattern (excluding main app)
           echo "📋 Fetching app list..."
           flyctl apps list --json > apps.json
           
@@ -78,8 +78,8 @@ jobs:
           while IFS= read -r app_line; do
             app_name=$(echo "$app_line" | jq -r '.Name')
             
-            # Skip if not a feature deployment (must start with asdf- but not be exactly asdf)
-            if [[ ! "$app_name" =~ ^asdf-.+ ]]; then
+            # Skip if not a feature deployment (must start with YOUR-APP-NAME- but not be exactly YOUR-APP-NAME)
+            if [[ ! "$app_name" =~ ^YOUR-APP-NAME-.+ ]]; then
               continue
             fi
             

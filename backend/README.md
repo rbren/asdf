@@ -1,6 +1,6 @@
-# asdf Python Backend
+# YOUR-APP-NAME Python Backend
 
-A simple Flask-based backend API for the asdf application.
+A simple Flask-based backend API for the YOUR-APP-NAME application.
 
 ## API Endpoints
 

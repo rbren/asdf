@@ -6,13 +6,13 @@ This repository is configured with automated deployments to Fly.io using GitHub 
 
 ### Production Deployments
 - **Trigger**: Push/merge to `main` branch
-- **Environment**: Production (`asdf.fly.dev`)
+- **Environment**: Production (`YOUR-APP-NAME.fly.dev`)
 - **Behavior**: Deploys directly to the main production app
 
 ### Feature/Preview Deployments
 - **Trigger**: Pull requests and commits to feature branches
 - **Environment**: Feature-specific preview environment
-- **Naming**: `asdf-{branch-name}.fly.dev`
+- **Naming**: `YOUR-APP-NAME-{branch-name}.fly.dev`
 - **Behavior**: 
   - Creates a unique Fly.io app for each branch
   - Comments on PR with deployment link (like Vercel)
@@ -25,7 +25,7 @@ This repository is configured with automated deployments to Fly.io using GitHub 
 2. Sign up/login: `flyctl auth signup` or `flyctl auth login`
 3. Get your API token: `flyctl auth token`
 
-**Note**: The production app `asdf` will be created automatically during the first deployment.
+**Note**: The production app `YOUR-APP-NAME` will be created automatically during the first deployment.
 
 ### 2. GitHub Secrets
 Add the following secret to your GitHub repository:
@@ -93,12 +93,12 @@ flyctl deploy --remote-only
 
 **Check app status:**
 ```bash
-flyctl status -a asdf
+flyctl status -a YOUR-APP-NAME
 ```
 
 **View logs:**
 ```bash
-flyctl logs -a asdf
+flyctl logs -a YOUR-APP-NAME
 ```
 
 **List all apps:**
