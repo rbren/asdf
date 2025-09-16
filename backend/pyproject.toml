@@ -15,7 +15,7 @@ description = "asdf Backend API - A modern Flask application template"
 readme = "README.md"
 requires-python = ">=3.8"
 authors = [
-    {name = "OpenVibe Team", email = "openhands@all-hands.dev"},
+    {name = "asdf Team", email = "openhands@all-hands.dev"},
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
