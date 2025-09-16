@@ -9,13 +9,13 @@ allow-direct-references = true
 packages = ["."]
 
 [project]
-name = "openvibe-template-backend"
+name = "asdf-backend"
 version = "0.1.0"
-description = "OpenVibe Template Backend API - A modern Flask application template"
+description = "asdf Backend API - A modern Flask application template"
 readme = "README.md"
 requires-python = ">=3.8"
 authors = [
-    {name = "OpenVibe Team", email = "openhands@all-hands.dev"},
+    {name = "asdf Team", email = "openhands@all-hands.dev"},
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -48,9 +48,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/rbren/openvibe-template"
-Repository = "https://github.com/rbren/openvibe-template"
-Issues = "https://github.com/rbren/openvibe-template/issues"
+Homepage = "https://github.com/rbren/asdf"
+Repository = "https://github.com/rbren/asdf"
+Issues = "https://github.com/rbren/asdf/issues"
 
 [tool.black]
 line-length = 88
