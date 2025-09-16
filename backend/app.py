@@ -19,7 +19,7 @@ def hello_world():
 
 @app.route("/api/health")
 def health_check():
-    return jsonify({"status": "healthy", "service": "YOUR-APP-NAME Backend"})
+    return jsonify({"status": "healthy", "service": "asdf Backend"})
 
 
 @app.route("/api/hello")

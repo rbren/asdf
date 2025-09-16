@@ -1,6 +1,6 @@
 # GitHub Actions Workflows
 
-This directory contains the GitHub Actions workflows for the YOUR-APP-NAME project.
+This directory contains the GitHub Actions workflows for the asdf project.
 
 ## Workflows
 
@@ -8,14 +8,14 @@ This directory contains the GitHub Actions workflows for the YOUR-APP-NAME proje
 - **Triggers**: Push to `main`, Pull Requests
 - **Purpose**: Builds and deploys the application to Fly.io
 - **Environments**:
-  - **Production**: `YOUR-APP-NAME` (main branch)
-  - **Preview**: `YOUR-APP-NAME-{branch-name}` (PRs and feature branches)
+  - **Production**: `asdf` (main branch)
+  - **Preview**: `asdf-{branch-name}` (PRs and feature branches)
 
 ### 🧹 `cleanup-pr.yml` - PR Cleanup
 - **Triggers**: When Pull Requests are closed
 - **Purpose**: Automatically cleans up feature deployments when PRs are closed
 - **Actions**:
-  - Deletes the associated Fly.io app (`YOUR-APP-NAME-{branch-name}`)
+  - Deletes the associated Fly.io app (`asdf-{branch-name}`)
   - Posts a cleanup confirmation comment on the PR
 
 ### 🗑️ `cleanup-cron.yml` - Scheduled Cleanup
@@ -27,7 +27,7 @@ This directory contains the GitHub Actions workflows for the YOUR-APP-NAME proje
   - Configurable maximum age (default: 7 days)
   - Dry run mode for testing
   - Detailed cleanup reports via GitHub issues
-  - Safe filtering (only deletes `YOUR-APP-NAME-*` apps, never the main `YOUR-APP-NAME` app)
+  - Safe filtering (only deletes `asdf-*` apps, never the main `asdf` app)
 
 ## Manual Cleanup
 
@@ -43,8 +43,8 @@ You can manually trigger the cleanup workflow with custom parameters:
 ## App Naming Convention
 
 Feature deployments follow this naming pattern:
-- **Main app**: `YOUR-APP-NAME`
-- **Feature apps**: `YOUR-APP-NAME-{clean-branch-name}`
+- **Main app**: `asdf`
+- **Feature apps**: `asdf-{clean-branch-name}`
 
 The branch name cleaning logic:
 1. Removes "github" (case insensitive)
@@ -63,7 +63,7 @@ Reusable script that generates clean Fly.io app names from branch names. Used by
 **Usage:**
 ```bash
 ./.github/scripts/get-app-name.sh "feature/add-new-component"
-# Output: YOUR-APP-NAME-feature-add-new-component
+# Output: asdf-feature-add-new-component
 ```
 
 ## Security

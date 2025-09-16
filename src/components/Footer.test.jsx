@@ -6,7 +6,7 @@ describe('Footer', () => {
   it('renders the footer content', () => {
     render(<Footer />)
     
-    expect(screen.getByText('YOUR-APP-NAME')).toBeInTheDocument()
+    expect(screen.getByText('asdf')).toBeInTheDocument()
     expect(screen.getByText('Building amazing experiences with React')).toBeInTheDocument()
   })
 
@@ -38,6 +38,6 @@ describe('Footer', () => {
   it('renders copyright notice', () => {
     render(<Footer />)
     
-    expect(screen.getByText('© 2025 YOUR-APP-NAME. All rights reserved.')).toBeInTheDocument()
+    expect(screen.getByText('© 2025 asdf. All rights reserved.')).toBeInTheDocument()
   })
 })

@@ -1,7 +1,7 @@
-# YOUR-APP-NAME
+# asdf
 
-[![CI](https://github.com/rbren/YOUR-APP-NAME/actions/workflows/ci.yml/badge.svg)](https://github.com/rbren/YOUR-APP-NAME/actions/workflows/ci.yml)
-[![Deploy](https://github.com/rbren/YOUR-APP-NAME/actions/workflows/deploy.yml/badge.svg)](https://github.com/rbren/YOUR-APP-NAME/actions/workflows/deploy.yml)
+[![CI](https://github.com/rbren/asdf/actions/workflows/ci.yml/badge.svg)](https://github.com/rbren/asdf/actions/workflows/ci.yml)
+[![Deploy](https://github.com/rbren/asdf/actions/workflows/deploy.yml/badge.svg)](https://github.com/rbren/asdf/actions/workflows/deploy.yml)
 
 A basic React application built with Vite.
 
