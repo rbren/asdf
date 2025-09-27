@@ -1,6 +1,6 @@
-# OpenVibe Hello World Python Backend
+# asdf Python Backend
 
-A simple Flask-based backend API for the OpenVibe Hello World application.
+A simple Flask-based backend API for the asdf application.
 
 ## API Endpoints
 
